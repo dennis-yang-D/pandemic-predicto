@@ -18,7 +18,7 @@
 <br>
 <form>
   <label for="sinput">Initial not infected:</label>
-  <input type="text" id="sinput" name="sinput"><br><br>
+  <input type="number" id="sinput" name="sinput"><br><br>
   <label for="iinput">Initial infected:</label>
   <input type="number" id="iinput" name="iinput"><br><br>
   <label for="rinput">Initial immune:</label>
@@ -39,7 +39,7 @@
     
 <script>
 function setVars(){
-    var S = document.getElementById("sinput");
+    var S = document.getElementById("sinput").value;
     window.alert('s value: ' + S.value);
     var I = document.getElementById("iinput");
     var R = document.getElementById("rinput");

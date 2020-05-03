@@ -22,13 +22,15 @@
   <input type="number" id="rinput" name="rinput"><br><br>
   <label for="dinput">Initial dead:</label>
   <input type="number" id="dinput" name="dinput"><br><br>
+  <label for="dainput">How long the infection lasts:</label>
+  <input type="number" id="dainput" name="dainput"><br><br>
+  <label for="dainput">Transmission coefficient (higher value means higher transmission):</label>
+  <input type="number" id="dainput" name="dainput"><br><br>
   <input type="submit" value="Submit" onclick="setVars()">
 </form>
 
 <p>This is the source</p>
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359860/</a>
-    
-    <p id="demo"></p>
     
 <script>
 function setVars(){
@@ -36,8 +38,6 @@ function setVars(){
     var I = document.getElementById("iinput");
     var R = document.getElementById("rinput");
     var D = document.getElementById("dinput");
-    document.getElementById("demo").innerHTML = S;
-    window.alert(I.value);
 }
 </script>
 

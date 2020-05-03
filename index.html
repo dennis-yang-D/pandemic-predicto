@@ -26,7 +26,7 @@
   <input type="number" id="dainput" name="dainput"><br><br>
   <label for="tinput">Transmission coefficient (higher value means higher transmission):</label>
   <input type="number" id="tinput" name="tinput" step=".001"><br><br>
-  <input type="submit" value="Submit" onclick="alert()">
+  <input type="submit" value="Submit" onclick="setVars()">
 </form>
 
     <button onclick="alert()">yee</button>
@@ -36,12 +36,13 @@
     
 <script>
 function setVars(){
-    window.S = document.getElementById("sinput");
+    var S = document.getElementById("sinput");
     var I = document.getElementById("iinput");
     var R = document.getElementById("rinput");
     var D = document.getElementById("dinput");
     var Days = document.getElementById("dainput");
     var T = document.getElementById("tinput");
+    localStorage.setItem('dennisObject',S);
 }
     
 function alert(){

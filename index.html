@@ -41,8 +41,7 @@
   <input type="submit" value="Submit">
 </form>
 
-<p>This is the source</p>
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359860/</a>
+    <p id="demo"></p>
     
 <script>
 function setVars(){
@@ -66,6 +65,8 @@ function setDays(){
     var Time = document.getElementById("tminput").value;
     localStorage.setItem('tiObject',Time);
 }
+    
+document.getElementById("demo").innerHTML = 5 + 6;
 </script>
 
 </body>

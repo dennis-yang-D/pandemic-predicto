@@ -48,18 +48,19 @@ function setVars(){
     var I = document.getElementById("iinput").value;
     var R = document.getElementById("rinput").value;
     var D = document.getElementById("dinput").value;
-    var Days = document.getElementById("dainput").value;
+    var infDays = document.getElementById("dainput").value;
     var T = document.getElementById("tinput").value;
     localStorage.setItem('sObject',S);
     localStorage.setItem('iObject',I);
     localStorage.setItem('rObject',R);
     localStorage.setItem('dObject',D);
-    localStorage.setItem('daysObject',Days);
+    localStorage.setItem('daysObject',infDays);
     localStorage.setItem('tObject',T);
 }
     
 function setDays(){
     var Time = document.getElementById("tminput").value;
+    localStorage.setItem('tiObject',Time);
 }
 </script>
 

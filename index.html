@@ -27,8 +27,10 @@
   <input type="number" id="dinput" name="dinput"><br><br>
   <label for="dainput">How long the infection lasts:</label>
   <input type="number" id="dainput" name="dainput"><br><br>
-  <label for="tinput">Transmission coefficient (higher value means higher transmission):</label>
+  <label for="tinput">Transmission coefficient (higher value means more people get infected):</label>
   <input type="number" id="tinput" name="tinput" step=".001"><br><br>
+  <label for="finput">Fatality rate (percent of people who die):</label>
+  <input type="number" id="finput" name="finput" step=".001"><br><br>
   <input type="submit" value="Submit">
 </form>
     <br></br>
@@ -50,12 +52,14 @@ function setVars(){
     var D = document.getElementById("dinput").value;
     var infDays = document.getElementById("dainput").value;
     var T = document.getElementById("tinput").value;
+    var F = document.getElementById("finput").value;
     localStorage.setItem('sObject',S);
     localStorage.setItem('iObject',I);
     localStorage.setItem('rObject',R);
     localStorage.setItem('dObject',D);
     localStorage.setItem('daysObject',infDays);
     localStorage.setItem('tObject',T);
+    localStorage.setItem('fObject',F);
 }
     
 function setDays(){

@@ -9,10 +9,13 @@
   var infDays = localStorage['daysObject'];
   var T = localStorage['tObject'];
   var Time = localStorage['tmObject'];
+  var F = localStorage['fObject'];
   
   var Rprime = (1/infDays)*I;
   var Iprime = T*S*I - (1/infDays)*I;
   var Sprime = T*S*I*(-1);
+  var Dprime = Iprime * (F/100)
+  Iprime = Iprime - Dprime;
 </script>
 </body>
 </html>

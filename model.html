@@ -7,6 +7,8 @@
     <input type="submit" name="Submit">
   </form>
   
+  <button onClick="showVars()">
+  
   <p id='showSp'></p>
   <p id='showIp'></p>
   <p id='showRp'></p>
@@ -31,10 +33,10 @@
   Iprime = Iprime - Dprime;
   window.alert(Rprime);
   function showVars(){
-    document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime.value;
-    document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime.value;
-    document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime.value;
-    document.getElementById("showDp").innerHTML = 'Today change in dead: ' + Dprime.value;
+    document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime;
+    document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime;
+    document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime;
+    document.getElementById("showDp").innerHTML = 'Today change in dead: ' + Dprime;
   }
   
 </script>

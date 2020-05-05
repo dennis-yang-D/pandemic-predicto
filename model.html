@@ -30,10 +30,10 @@
   var Dprime = Iprime * (F/100)
   Iprime = Iprime - Dprime;
   function showVars(){
-    document.getElementById("showSp").innerHTML = 'Today change in uninfected' + Sprime;
-    document.getElementById("showIp").innerHTML = 'Today change in infected' + Iprime;
-    document.getElementById("showRp").innerHTML = 'Today change in recovered' + Rprime;
-    document.getElementById("showDp").innerHTML = 'Today change in dead' + Dprime;
+    document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime.value;
+    document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime.value;
+    document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime.value;
+    document.getElementById("showDp").innerHTML = 'Today change in dead: ' + Dprime.value;
   }
   
 </script>

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <p>hey</p>
+  <form>
+    <label for="sinput">View day</label>
+    <input type="number" id="sinput" name="sinput"><br><br>
+    <input type="submit" name="Submit">
+  </form>
+  
+  <p id='showSp'></p>
 <script>
   var S = localStorage['sObject'];
   var I = localStorage['iObject'];
@@ -21,12 +27,7 @@
   var Dprime = Iprime * (F/100)
   Iprime = Iprime - Dprime;
   
-  localStorage['RpObj'] = Rprime;
-  localStorage['IpObj'] = Iprime;
-  localStorage['SpObj'] = Sprime;
-  localStorage['DpObj'] = Dprime;
-  
-  window.alert(localStorage['SpObj']);
+  document.getElementById("showSp").innerHTML = Sprime;
   
 </script>
 </body>

@@ -11,11 +11,18 @@
   var Time = localStorage['tmObject'];
   var F = localStorage['fObject'];
   
+  localStorage.clear();
+  
   var Rprime = (1/infDays)*I;
   var Iprime = T*S*I - (1/infDays)*I;
   var Sprime = T*S*I*(-1);
   var Dprime = Iprime * (F/100)
   Iprime = Iprime - Dprime;
+  
+  localStorage['RpObj'] = Rprime;
+  localStorage['IpObj'] = Iprime;
+  localStorage['SpObj'] = Sprime;
+  localStorage['DpObj'] = Dprime;
 </script>
 </body>
 </html>

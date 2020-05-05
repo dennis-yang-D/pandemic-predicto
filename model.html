@@ -29,6 +29,7 @@
   var Sprime = T*S*I*(-1);
   var Dprime = Iprime * (F/100)
   Iprime = Iprime - Dprime;
+  window.alert(Rprime);
   function showVars(){
     document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime.value;
     document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime.value;

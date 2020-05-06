@@ -33,9 +33,6 @@ table, th, td {
   
   <table style="width:100%" id="caseTable">
   <tr>
-    <th>Total number of cases per day</th>
-  </tr>
-  <tr>
     <td>Days</td>
   </tr>
   <tr>
@@ -125,22 +122,19 @@ table, th, td {
       
       switch(i){
         case 0:
-             text = null;
-             break;
-        case 1:
              text = c;
              break;
-        case 2:
+        case 1:
              calcResults(c);
              text = Math.round(Sprime);
              window.alert(text);
-        case 3:
+        case 2:
              calcResults(c);
              text = Math.round(Iprime);
-        case 4:
+        case 3:
              calcResults(c);
              text = Math.round(Rprime);
-        case 5:
+        case 4:
              calcResults(c);
              text = Math.round(Dprime);
       }

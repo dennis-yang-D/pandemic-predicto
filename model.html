@@ -7,8 +7,6 @@
     <input type="submit" name="Submit">
   </form>
   
-  <button onClick="showVars()">Show results</button>
-  
   <p id='showSp'></p>
   <p id='showIp'></p>
   <p id='showRp'></p>
@@ -57,10 +55,6 @@
     window.alert(Sprime);
     window.alert(S);
   }
-  }
-
-  function showVars(){
-    window.alert(Sprime);
     document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime;
     document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime;
     document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime;
@@ -70,6 +64,7 @@
     document.getElementById("showRt").innerHTML = 'Today recovered: ' + R;
     document.getElementById("showDt").innerHTML = 'Today dead: ' + D;
   }
+
   
 </script>
 </body>

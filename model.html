@@ -27,6 +27,24 @@ body {
   <p id='showIt'></p>
   <p id='showRt'></p>
   <p id='showDt'></p>
+  
+  <table style="width:100%">
+  <tr>
+    <th>Days</th>
+  </tr>
+  <tr>
+    <td>Total Uninfected</td>
+  </tr>
+  <tr>
+    <td>Total Infected</td>
+  </tr>
+  <tr>
+    <td>Total Recovered</td>
+  </tr>
+  <tr>
+    <td>Total Dead</td>
+  </tr>
+</table>
 
 <script>
   var S;
@@ -70,10 +88,10 @@ body {
     document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime;
     document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime;
     document.getElementById("showDp").innerHTML = 'Today change in dead: ' + Dprime;
-    document.getElementById("showSt").innerHTML = 'Today uninfected: ' + S;
-    document.getElementById("showIt").innerHTML = 'Today infected: ' + I;
-    document.getElementById("showRt").innerHTML = 'Today recovered: ' + R;
-    document.getElementById("showDt").innerHTML = 'Today dead: ' + D;
+    document.getElementById("showSt").innerHTML = 'Total uninfected: ' + S;
+    document.getElementById("showIt").innerHTML = 'Total infected: ' + I;
+    document.getElementById("showRt").innerHTML = 'Total recovered: ' + R;
+    document.getElementById("showDt").innerHTML = 'Total dead: ' + D;
     return false;
   }
 

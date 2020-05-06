@@ -50,10 +50,10 @@
     Sprime = T*S*I*(-1);
     Dprime = Iprime * (F/100)
     Iprime = Iprime - Dprime;
-    R = +R - +Rprime;
-    I = +I + +Iprime;
-    S = +S + +Sprime;
-    D = +D + +Dprime;
+    R = parseInt(R, 10) - parseInt(Rprime,10);
+    I = parseInt(I, 10) - parseInt(Iprime,10);
+    S = parseInt(S, 10) - parseInt(Sprime,10);
+    D = parseInt(D, 10) - parseInt(Dprime,10);
     window.alert(Sprime);
     window.alert(S);
   }

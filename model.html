@@ -30,6 +30,7 @@ table, th, td {
   <p id='showIt'></p>
   <p id='showRt'></p>
   <p id='showDt'></p>
+  <p id='showRn'></p>
   
   <table style="width:100%" id="caseTable">
   <tr>
@@ -109,6 +110,7 @@ table, th, td {
     document.getElementById("showIt").innerHTML = 'Total infected: ' + I;
     document.getElementById("showRt").innerHTML = 'Total recovered: ' + R;
     document.getElementById("showDt").innerHTML = 'Total dead: ' + D;
+    document.getElementById("showDt").innerHTML = 'R_0: ' + T/(1/infDays);
     return false;
   }
 

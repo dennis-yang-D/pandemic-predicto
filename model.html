@@ -75,6 +75,10 @@ table, th, td {
   I = localStorage['iObject'];
   R = localStorage['rObject'];
   D = localStorage['dObject'];
+    if(D>100)
+    {
+      D = 100;
+    }
   infDays = localStorage['daysObject'];
   T = localStorage['tObject'];
   Time = localStorage['tmObject'];
@@ -137,7 +141,7 @@ table, th, td {
              calcResults(c);
              text = Math.round(D);
       }
-          window.alert(text);
+          
         createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), text, 'col');
         }
   }

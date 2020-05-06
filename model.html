@@ -128,20 +128,20 @@ table, th, td {
              text = null;
              break;
         case 1:
-             text = c.value;
+             text = c;
              break;
         case 2:
              calcResults(i);
-             text = Sprime;
+             text = Sprime.value;
         case 3:
              calcResults(i);
-             text = Iprime;
+             text = Iprime.value;
         case 4:
              calcResults(i);
-             text = Rprime;
+             text = Rprime.value;
         case 5:
              calcResults(i);
-             text = Dprime;
+             text = Dprime.value;
       }
           
         createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), text, 'col');

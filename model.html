@@ -151,7 +151,7 @@ table, th, td {
   
   function createCell(cell, text, style) {
     var div = document.createElement('div'),
-        txt = document.createTextNode(text);
+        txt = document.createTextNode(text.toString());
     div.appendChild(txt);                 
     div.setAttribute('class', style);      
     div.setAttribute('className', style);    

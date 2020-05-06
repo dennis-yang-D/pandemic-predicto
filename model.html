@@ -50,10 +50,10 @@
     Sprime = T*S*I*(-1);
     Dprime = Iprime * (F/100)
     Iprime = Iprime - Dprime;
-    R = R-Rprime;
-    I = I+Iprime;
-    S = S+Sprime;
-    D = D+Dprime;
+    R = +R - +Rprime;
+    I = +I + +Iprime;
+    S = +S + +Sprime;
+    D = +D + +Dprime;
     window.alert(Sprime);
     window.alert(S);
   }

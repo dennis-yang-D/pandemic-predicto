@@ -126,7 +126,6 @@ table, th, td {
              break;
         case 1:
              calcResults(c);
-             text = Math.round(S);
              window.alert(text);
         case 2:
              calcResults(c);
@@ -144,6 +143,7 @@ table, th, td {
   }
   
   function createCell(cell, text, style) {
+    window.alert(text);
     var div = document.createElement('div'),
         txt = document.createTextNode(text.toString());
     div.appendChild(txt);                 

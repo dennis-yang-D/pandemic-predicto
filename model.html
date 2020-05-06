@@ -19,17 +19,25 @@
   <p id='showDt'></p>
 
 <script>
-  
+  var S;
+  var I;
+  var R;
+  var D;
+  var infDays;
+  var T;
+  var Time;
+  var F;
+  var wDay;
   function setDays(){
-    var S = localStorage['sObject'];
-  var I = localStorage['iObject'];
-  var R = localStorage['rObject'];
-  var D = localStorage['dObject'];
-  var infDays = localStorage['daysObject'];
-  var T = localStorage['tObject'];
-  var Time = localStorage['tmObject'];
-  var F = localStorage['fObject'];
-    var wDay = document.getElementById("tminput").value;
+    S = localStorage['sObject'];
+  I = localStorage['iObject'];
+  R = localStorage['rObject'];
+  D = localStorage['dObject'];
+  infDays = localStorage['daysObject'];
+  T = localStorage['tObject'];
+  Time = localStorage['tmObject'];
+  F = localStorage['fObject'];
+  wDay = document.getElementById("tminput").value;
   var i;
   for(i = 0; i<wDay; i++)
   {

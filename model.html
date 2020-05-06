@@ -6,6 +6,7 @@
     <input type="number" id="tminput" name="tminput"><br><br>
     <input type="submit" name="Submit">
   </form>
+  <button onClick="calcResults()">Click me to show results</button>
   
   <p id='showSp'></p>
   <p id='showIp'></p>
@@ -30,7 +31,12 @@
   var Sprime;
   var Iprime;
   var Dprime;
+  
   function setDays(){
+    wDay = document.getElementById("tminput");
+  }
+  
+  function calcResults(){
     S = localStorage['sObject'];
   I = localStorage['iObject'];
   R = localStorage['rObject'];

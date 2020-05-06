@@ -28,6 +28,10 @@
   var Time;
   var F;
   var wDay;
+  var Rprime;
+  var Sprime;
+  var Iprime;
+  var Dprime
   function setDays(){
     S = localStorage['sObject'];
   I = localStorage['iObject'];
@@ -41,10 +45,10 @@
   var i;
   for(i = 0; i<wDay; i++)
   {
-    var Rprime = (1/infDays)*I;
-    var Iprime = T*S*I - (1/infDays)*I;
-    var Sprime = T*S*I*(-1);
-    var Dprime = Iprime * (F/100)
+    Rprime = (1/infDays)*I;
+    Iprime = T*S*I - (1/infDays)*I;
+    Sprime = T*S*I*(-1);
+    Dprime = Iprime * (F/100)
     Iprime = Iprime - Dprime;
     R = R-Rprime;
     I = I+Iprime;

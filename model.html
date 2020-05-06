@@ -67,13 +67,13 @@ table, th, td {
   var Iprime;
   var Dprime;
   
-  var i;
-    for(i = 1; i<11; i++)
+  var c;
+    for(c = 1; c<11; c++)
     {
-      appendColumn();
+      appendColumn(c);
     }
   
-  function calcResults(){
+  function calcResults(wDay){
       S = localStorage['sObject'];
   I = localStorage['iObject'];
   R = localStorage['rObject'];
@@ -99,7 +99,7 @@ table, th, td {
   
   function printResults(){
     wDay = document.getElementById("tminput").value;
-    calcResults();
+    calcResults(wDay);
     document.getElementById("showSp").innerHTML = 'Today change in uninfected: ' + Sprime;
     document.getElementById("showIp").innerHTML = 'Today change in infected: ' + Iprime;
     document.getElementById("showRp").innerHTML = 'Today change in recovered: ' + Rprime;
@@ -112,12 +112,39 @@ table, th, td {
   }
 
   
-  function appendColumn() {
+  function appendColumn(c) {
     var tbl = document.getElementById('caseTable'),
         i;
+    var text;
+    if(c>7)
+    {
+      c=7*(c-6);
+    }
     // open loop for each row and append cell
     for (i = 0; i < tbl.rows.length; i++) {
-        createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), i, 'col');
+      
+      switch(i){
+          case 0
+             text = "";
+             break;
+          case 1
+             text = c.value;
+             break;
+          case 2
+             calcResults(i);
+             text = Sprime;
+          case 3
+             calcResults(i);
+             text = Iprime;
+          case 4
+             calcResults(i);
+             text = Rprime;
+          case 5
+             calcResults(i);
+             text = Dprime;
+      }
+          
+        createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), text, 'col');
         }
   }
   

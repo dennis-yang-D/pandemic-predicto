@@ -17,9 +17,7 @@
   <p id='showIt'></p>
   <p id='showRt'></p>
   <p id='showDt'></p>
-  
-  
-    
+
 <script>
   var S = localStorage['sObject'];
   var I = localStorage['iObject'];
@@ -57,16 +55,6 @@
     document.getElementById("showIt").innerHTML = 'Today infected: ' + I;
     document.getElementById("showRt").innerHTML = 'Today recovered: ' + R;
     document.getElementById("showDt").innerHTML = 'Today dead: ' + D;
-  }
-  
-  var tbl = document.createElement("TABLE");
-  tbl.setAttribute("id", "myTable");
-  document.body.appendChild(tbl);
-  
-  var TableDays;
-  for(TableDays = 1; TableDays<17; TableDays++)
-  {
-    
   }
   
 </script>

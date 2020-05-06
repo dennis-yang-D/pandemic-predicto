@@ -107,7 +107,11 @@ table, th, td {
 
   function createTbl()
   {
-    
+    int i;
+    for(int i = 1; i<11; i++)
+    {
+      appendColumn();
+    }
   }
   
   function appendColumn() {
@@ -119,7 +123,7 @@ table, th, td {
         }
   }
   
-  function createCell(cell, text, style) {
+  function createCell(cell, i, style) {
     var div = document.createElement('div'),
         txt = document.createTextNode(text);
     div.appendChild(txt);                 

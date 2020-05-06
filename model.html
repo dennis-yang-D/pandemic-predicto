@@ -137,13 +137,12 @@ table, th, td {
              calcResults(c);
              text = Math.round(D);
       }
-          
+          window.alert(text);
         createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), text, 'col');
         }
   }
   
   function createCell(cell, text, style) {
-    window.alert(text);
     var div = document.createElement('div'),
         txt = document.createTextNode(text.toString());
     div.appendChild(txt);                 

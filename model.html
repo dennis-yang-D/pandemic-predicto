@@ -67,6 +67,12 @@ table, th, td {
   var Iprime;
   var Dprime;
   
+  int i;
+    for(int i = 1; i<11; i++)
+    {
+      appendColumn();
+    }
+  
   function calcResults(){
       S = localStorage['sObject'];
   I = localStorage['iObject'];
@@ -105,14 +111,6 @@ table, th, td {
     return false;
   }
 
-  function createTbl()
-  {
-    int i;
-    for(int i = 1; i<11; i++)
-    {
-      appendColumn();
-    }
-  }
   
   function appendColumn() {
     var tbl = document.getElementById('caseTable'),

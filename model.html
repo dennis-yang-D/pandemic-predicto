@@ -30,9 +30,7 @@
   localStorage.clear();
   
   function setDays(){
-    var wDay = document.getElementById("tminput").value; 
-  }
-  
+    var wDay = document.getElementById("tminput").value;
   var i;
   for(i = 0; i<wDay; i++)
     var Rprime = (1/infDays)*I;
@@ -44,6 +42,7 @@
     I = I+Iprime;
     S = S+Sprime;
     D = D+Dprime;
+  }
   }
   
   function showVars(){

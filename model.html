@@ -131,18 +131,18 @@ table, th, td {
              text = c;
              break;
         case 2:
-             calcResults(i);
-             window.alert(Sprime);
-             text = Sprime;
+             calcResults(c);
+             window.alert(Math.round(Sprime));
+             text = Math.round(Sprime);
         case 3:
-             calcResults(i);
-             text = Iprime;
+             calcResults(c);
+             text = Math.round(Iprime));
         case 4:
-             calcResults(i);
-             text = Rprime;
+             calcResults(c);
+             text = Math.round(Rprime));
         case 5:
-             calcResults(i);
-             text = Dprime;
+             calcResults(c);
+             text = Math.round(Dprime));
       }
           
         createCell(tbl.rows[i].insertCell(tbl.rows[i].cells.length), text, 'col');
